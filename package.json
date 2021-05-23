@@ -1,0 +1,20 @@
+{
+  "name": "webscrapping_and_analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Ashish",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gnews": "^1.0.3",
+    "google-news-rss": "^0.4.1",
+    "natural": "^5.0.3",
+    "stopword": "^1.0.7",
+    "nodemon": "^2.0.7"
+  }
+}
