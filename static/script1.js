@@ -155,11 +155,11 @@ function makechart(data) {
     document.getElementById("category_news").style.display = "none";
     document.getElementById("result").style.display = "none";
 
-    let child_elements=event.target.parentElement.children;
+    let child_elements=event.currentTarget.parentElement.children;
     child_elements.forEach((el)=>{if(el.classList.contains("color_category")) el.classList.remove("color_category")})  
 
-    event.target.classList.add("color_category");
-    fetch(`/category/${event.target.innerText.toUpperCase()}`).then((res) => res.json()).then((data) => {
+    event.currentTarget.classList.add("color_category");
+    fetch(`/category/${event.currentTarget.innerText.toUpperCase()}`).then((res) => res.json()).then((data) => {
         document.getElementById("category_news").innerHTML = "";
         data.forEach((element)=>{
             let article = document.createElement("div");
